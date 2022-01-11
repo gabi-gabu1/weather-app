@@ -1,0 +1,66 @@
+h1 {
+  color: #006ec5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+p {
+  margin: 0 20px;
+}
+
+.forecast-days {
+  text-align: center;
+}
+.prague {
+  padding-left: 80px;
+}
+.temperature-prague {
+  padding-left: 30px;
+  font-size: 120px;
+  text-align: right;
+  color: #006ec5;
+}
+.units {
+  position: relative;
+  top: -70px;
+  color: #006ec5;
+}
+.search {
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.container {
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin: 100px auto;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.search-button {
+  background-color: #939aa9;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+}
+.search-button:hover {
+  background-color: #b4b4b4;
+}
+
+.city-input {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.current-location-button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: #66a3ff;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+}
+.current-location-button:hover {
+  background-color: #80b3ff;
+}
