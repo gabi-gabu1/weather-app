@@ -11,7 +11,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
@@ -34,15 +34,14 @@
           </form>
         </div>
         <div class="col-4 prague">
-          <h1 id="city"></h1>
+          <h1 id="city" class="city-prague"></h1>
 
           <ul>
-            <li id="current-time"></li>
+            <li id="current-time">Friday 16:22</li>
 
             <li><span id="description"></span></li>
           </ul>
           <ul>
-            <li>Chance of rain: <span id="rain">10</span>%</li>
             <li>Humidity: <span id="humidity"></span>%</li>
             <li>Wind: <span id="wind"></span>km/hr</li>
           </ul>
@@ -85,6 +84,6 @@
         </div>
       </div>
     </div>
-    <script src="src/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
