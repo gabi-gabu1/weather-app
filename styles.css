@@ -18,7 +18,7 @@ p {
 }
 .temperature-prague {
   padding-left: 30px;
-  font-size: 120px;
+  font-size: 100px;
   text-align: right;
   color: #006ec5;
 }
@@ -32,6 +32,8 @@ p {
   border-radius: 5px;
 }
 .container {
+  background-image: url(gradient.jpg);
+  background-size: cover;
   border: 1px solid gray;
   border-radius: 20px;
   margin: 100px auto;
