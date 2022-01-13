@@ -66,3 +66,15 @@ p {
 .current-location-button:hover {
   background-color: #80b3ff;
 }
+
+a:link {
+  text-decoration: none;
+}
+.open-source {
+  margin-left: 200px;
+  position: relative;
+  top: -95px;
+}
+a:hover {
+  color: #045b9e;
+}
