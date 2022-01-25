@@ -32,12 +32,14 @@ p {
   border-radius: 5px;
 }
 .container {
-  background-image: url(gradient.jpg);
-  background-size: cover;
   border: 1px solid gray;
   border-radius: 20px;
-  margin: 100px auto;
+  margin: 30px auto;
   padding: 40px;
+  max-width: 800px;
+}
+.container-wrapper {
+  margin: 30px auto;
   max-width: 800px;
 }
 
