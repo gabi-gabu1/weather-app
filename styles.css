@@ -7,7 +7,7 @@ ul {
   padding: 0;
 }
 
-li::first-letter {
+li:first-letter {
   text-transform: capitalize;
 }
 p {
@@ -27,7 +27,7 @@ p {
   color: #006ec5;
 }
 .temperature-container {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 .units {
   position: relative;
@@ -80,4 +80,8 @@ a:link {
 } */
 a:hover {
   color: #045b9e;
+}
+
+.date {
+  color: gray;
 }
