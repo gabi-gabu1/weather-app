@@ -16,82 +16,92 @@
   </head>
   <body>
     <div class="container-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 search">
-          <form id="city-form">
-            <input
-              class="city-input"
-              id="enter-city"
-              type="text"
-              placeholder="Enter a city"
-              autocomplete="off"
-              autofocus
-            />
-            <input type="submit" value="Search" class="search-button" />
-            <button class="current-location-button" id="current-weather">
-              Your location
-            </button>
-          </form>
-        </div>
-        <div class="col-4 prague">
-          <h1 id="city" class="city-prague"></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 search">
+            <form id="city-form">
+              <input
+                class="city-input"
+                id="enter-city"
+                type="text"
+                placeholder="Enter a city"
+                autocomplete="off"
+                autofocus
+              />
+              <input
+                type="submit"
+                value="Search"
+                class="search-button btn-primary"
+              />
+              <button
+                class="current-location-button btn-primary m-3"
+                id="current-weather"
+              >
+                Your location
+              </button>
+            </form>
+          </div>
+          <div class="col-4 prague">
+            <h1 id="city" class="city-prague"></h1>
 
-          <ul>
-            <li id="current-time">Friday 16:22</li>
+            <ul>
+              <li>
+                <img src="" id="icon" alt="icon" />
+              </li>
+              <li id="current-time">Friday 16:22</li>
 
-            <li><span id="description"></span></li>
-          </ul>
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span>km/hr</li>
-          </ul>
+              <li><span id="description"></span></li>
+            </ul>
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/hr</li>
+            </ul>
+          </div>
+          <div class="col-4 temperature-container">
+            <span id="temperature" class="temperature-prague"></span>
+            <span class="units">
+              <a href="#" id="celsius">°C</a> |
+              <a href="#" id="fahrenheit">°F</a>
+            </span>
+          </div>
         </div>
-        <div class="col-4">
-          <span id="temperature" class="temperature-prague"></span>
-          <span class="units">
-            <a href="#" id="celsius">°C</a>
-            <a href="#" id="fahrenheit">°F</a>
-          </span>
-        </div>
-      </div>
-      <hr />
-      <div class="row forecast-days">
-        <div class="col">
-          Saturday
-          <p>
-            ⛅ <br />
+        <hr />
+        <div class="row forecast-days">
+          <div class="col">
+            Saturday
+            <p>
+              ⛅ <br />
+              8°C
+            </p>
+          </div>
+          <div class="col">
+            Sunday <br />
+            🌧 <br />
+            9°C
+          </div>
+          <div class="col">
+            Monday <br />
+            🌤 <br />9°C
+          </div>
+          <div class="col">
+            Tuesday <br />
+            🌤 <br />
+            11°C
+          </div>
+          <div class="col">
+            Wednesday <br />
+            🌧 <br />
             8°C
-          </p>
-        </div>
-        <div class="col">
-          Sunday <br />
-          🌧 <br />
-          9°C
-        </div>
-        <div class="col">
-          Monday <br />
-          🌤 <br />9°C
-        </div>
-        <div class="col">
-          Tuesday <br />
-          🌤 <br />
-          11°C
-        </div>
-        <div class="col">
-          Wednesday <br />
-          🌧 <br />
-          8°C
+          </div>
         </div>
       </div>
+      <p class="open-source">
+        <a href="https://github.com/gabi-gabu1/weather-app" target="_blank">
+          Open-source code
+        </a>
+        by Gabriela Dontamsetti
+      </p>
     </div>
-    <p class="open-source">
-      <a href="https://github.com/gabi-gabu1/weather-app" target="_blank">
-        Open-source code
-      </a>
-      by Gabriela Dontamsetti
-    </p>
-  </div>
     <script src="index.js"></script>
   </body>
 </html>
