@@ -7,6 +7,10 @@ ul {
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 li:first-letter {
   text-transform: capitalize;
 }
@@ -21,67 +25,66 @@ p {
   padding-left: 80px;
 }
 .temperature-prague {
-  padding-left: 30px;
+  /* margin-top: 40px; */
   font-size: 100px;
   text-align: right;
   color: #006ec5;
 }
-.temperature-container {
-  padding-top: 50px;
-}
+
 .units {
   position: relative;
   top: -60px;
   color: #006ec5;
 }
-.search {
-  margin-top: 50px;
-  border-radius: 5px;
-}
+
 .container {
   margin: 100px auto 5px;
-  padding: 40px;
+  padding: 30px;
   max-width: 800px;
   border: 1px solid gray;
   border-radius: 20px;
 }
 .container-wrapper {
   max-width: 800px;
-  margin: 30px auto;
 }
 
 .search-button {
-  /* background-color: #939aa9; */
   border-radius: 5px;
   transition: all 200ms ease-in-out;
-}
-
-.city-input {
-  width: 150px;
-  border-radius: 5px;
 }
 
 .current-location-button {
-  /* padding: 5px 10px;
-  margin-left: 10px;
-  margin-top: 20px; */
-  /* background-color: #7cc488; */
+  padding: 5px 10px 5px 6px;
   border-radius: 5px;
   transition: all 200ms ease-in-out;
+  width: 150px;
+}
+
+.location-button {
+  margin-left: 576px;
+  margin-bottom: 40px;
 }
 
 a:link {
   text-decoration: none;
 }
-/* .open-source {
-  margin-left: 200px;
-  position: relative;
-  top: -95px;
-} */
+
 a:hover {
   color: #045b9e;
 }
 
 .date {
   color: gray;
+}
+
+.open-source {
+  margin-left: 125px;
+}
+
+.weather-icon {
+  padding-top: 30px;
+  text-align: right;
+}
+.forecast-temperature-min {
+  opacity: 0.6;
 }

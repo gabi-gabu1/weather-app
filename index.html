@@ -15,40 +15,45 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 search">
-            <form id="city-form">
-              <input
-                class="city-input"
-                id="enter-city"
-                type="text"
-                placeholder="Enter a city"
-                autocomplete="off"
-                autofocus
-              />
-              <input
-                type="submit"
-                value="Search"
-                class="search-button btn-primary"
-              />
-              <button
-                class="current-location-button btn-primary m-3"
-                id="current-weather"
-              >
-                Your location
-              </button>
-            </form>
+    <div class="container">
+     <div class="container-wrapper">
+        <div class="row search">
+          <div class="col-9">
+          <form id="city-form">
+            <input
+              class="form-control mb-4 city-input"
+              id="enter-city"
+              type="text"
+              placeholder="Enter a city"
+              autocomplete="off"
+              autofocus
+
+            />
           </div>
-          <div class="col-4 prague">
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              class="search-button btn btn-primary w-100"
+            />
+          </div>
+          <div class="location-button">
+            <button
+              class="current-location-button btn btn-info m-1"
+              id="current-weather"
+            >
+            📍 Your location
+            </button>
+          </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-5 prague">
             <h1 id="city" class="city-prague"></h1>
 
             <ul>
               <li id="current-time" class="date">Friday 16:22</li>
-              <li>
-                <img src="" id="icon" alt="icon" />
-              </li>
+              
 
               <li><span id="description"></span></li>
             </ul>
@@ -57,6 +62,9 @@
               <li>Wind: <span id="wind"></span>km/hr</li>
             </ul>
           </div>
+          <div class="col-3 weather-icon"><li>
+            <img src="" id="icon" alt="icon" />
+          </li></div>
           <div class="col-4 temperature-container">
             <span id="temperature" class="temperature-prague"></span>
             <span class="units">
@@ -68,40 +76,48 @@
         <hr />
         <div class="row forecast-days">
           <div class="col">
-            Saturday
-            <p>
-              ⛅ <br />
-              8°C
-            </p>
+            <div class="forecast-day">Saturday</div> 
+            
+              ⛅ <div class="forecast-temperature">
+                <span class="forecast-temperature-max"> 9° </span>
+                <span class="forecast-temperature-min"> 2° </span>
+            </div>
+            
           </div>
           <div class="col">
-            Sunday <br />
-            🌧 <br />
-            9°C
+            <div class="weather-forecast-date">Sunday</div>
+            🌤
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max"> 9° </span>
+              <span class="forecast-temperature-min"> 2° </span>
+            </div>
           </div>
           <div class="col">
-            Monday <br />
-            🌤 <br />9°C
+            <div class="weather-forecast-date">Monday</div> 
+            🌤 <div class="forecast-temperature">9°C </div>
           </div>
           <div class="col">
-            Tuesday <br />
-            🌤 <br />
-            11°C
+            <div class="weather-forecast-date">Tuesday</div> 
+            🌤 <div class="forecast-temperature">
+            11°C </div>
           </div>
           <div class="col">
-            Wednesday <br />
-            🌧 <br />
-            8°C
+            <div class="weather-forecast-date">Wednesday</div> 
+            🌧 
+            <div class="forecast-temperature">
+              8°C</div>
+            
           </div>
         </div>
       </div>
+    </div>
       <p class="open-source">
         <a href="https://github.com/gabi-gabu1/weather-app" target="_blank">
           Open-source code
         </a>
         by Gabriela Dontamsetti
       </p>
-    </div>
+    
     <script src="index.js"></script>
   </body>
 </html>
