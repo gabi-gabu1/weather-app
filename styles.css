@@ -37,14 +37,14 @@ p {
   color: #006ec5;
 }
 
-.container {
+.container-wrapper {
   margin: 100px auto 5px;
   padding: 30px;
   max-width: 800px;
   border: 1px solid gray;
   border-radius: 20px;
 }
-.container-wrapper {
+.container {
   max-width: 800px;
 }
 
@@ -61,7 +61,7 @@ p {
 }
 
 .location-button {
-  margin-left: 576px;
+  margin-left: 10px;
   margin-bottom: 40px;
 }
 
@@ -75,10 +75,6 @@ a:hover {
 
 .date {
   color: gray;
-}
-
-.open-source {
-  margin-left: 125px;
 }
 
 .weather-icon {

@@ -19,8 +19,8 @@
      <div class="container-wrapper">
         <div class="row search">
           <div class="col-9">
-          <form id="city-form">
-            <input
+            <form id="city-form">
+              <input
               class="form-control mb-4 city-input"
               id="enter-city"
               type="text"
@@ -37,6 +37,7 @@
               class="search-button btn btn-primary w-100"
             />
           </div>
+          
           <div class="location-button">
             <button
               class="current-location-button btn btn-info m-1"
@@ -45,8 +46,9 @@
             📍 Your location
             </button>
           </div>
-          </form>
         </div>
+          </form>
+        
         <div class="row">
           <div class="col-5 prague">
             <h1 id="city" class="city-prague"></h1>
@@ -62,6 +64,7 @@
               <li>Wind: <span id="wind"></span>km/hr</li>
             </ul>
           </div>
+
           <div class="col-3 weather-icon"><li>
             <img src="" id="icon" alt="icon" />
           </li></div>
@@ -74,50 +77,19 @@
           </div>
         </div>
         <hr />
-        <div class="row forecast-days">
-          <div class="col">
-            <div class="forecast-day">Saturday</div> 
-            
-              ⛅ <div class="forecast-temperature">
-                <span class="forecast-temperature-max"> 9° </span>
-                <span class="forecast-temperature-min"> 2° </span>
-            </div>
-            
-          </div>
-          <div class="col">
-            <div class="weather-forecast-date">Sunday</div>
-            🌤
-            <div class="forecast-temperature">
-              <span class="forecast-temperature-max"> 9° </span>
-              <span class="forecast-temperature-min"> 2° </span>
-            </div>
-          </div>
-          <div class="col">
-            <div class="weather-forecast-date">Monday</div> 
-            🌤 <div class="forecast-temperature">9°C </div>
-          </div>
-          <div class="col">
-            <div class="weather-forecast-date">Tuesday</div> 
-            🌤 <div class="forecast-temperature">
-            11°C </div>
-          </div>
-          <div class="col">
-            <div class="weather-forecast-date">Wednesday</div> 
-            🌧 
-            <div class="forecast-temperature">
-              8°C</div>
-            
-          </div>
+        <div class="forecast-days" id="forecast">
+          
         </div>
+        
       </div>
-    </div>
+    
       <p class="open-source">
         <a href="https://github.com/gabi-gabu1/weather-app" target="_blank">
           Open-source code
         </a>
         by Gabriela Dontamsetti
       </p>
-    
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
